@@ -1,0 +1,41 @@
+TechStore Gruppinlämning 
+
+Då kombinations besvär uppstod i början av grupparbetet så har uppgifts uppdelningen inte vara det mest effektiva.
+ Vi valde att skriva lite mer separat en att sammanställa och jobba över Git. Vi jobba mer separat och arbetade 
+med våra egna filer. En stor konsekvens av detta är att funktionerna med Inlog och Main sidan inte har det samspel
+ som det borde. Så för att utveckla vårt arbete skulle vi fokusera mer på samspel då skulle det flyta mycket 
+bättre mellan sidorna och den generella sidans funktionalitet. Vi har båda använt oss utav både Jquery och 
+Bootstrap. Vi använder oss av dessa förbestämda biliotek för att simplifiera våran kod. Det har även skapat
+ det problem att ifall man inte hård kådar vår kod så blir det lättare att man av misstag tappar bort sig när
+ det kommer till att rätta en funktion som inte fungerar. Samtidigt så ger det mycket frihet då man skippar att
+ skriva längre mängder av kod för att det krävs mycket mindre kod för att göra samma funktion i JQuery än i 
+Javascript. Vi valde att lägga till Plus och minus knappar på hemsidan när det kommer till köp av samma mobil
+ flera gånger istället för att printa alla dessa mobiler som sin egna kort. Detta gör hemsidan mycket enklare 
+att förstå samt att det inte tar upp lika mycket plats på skärmen för att  
+
+Visa samma information. Tanken med inloggningssystemet är att skapa möjligheten för kunden att spara sina 
+tidigare köp och samt visa på förståelsen för localStorage och JSON.Parse() JSON.Stringify. Detta används
+ för att simulera en databas i domen, eftersom att vi inte har en riktig databas.  
+
+Båda JSON funktionerna till inloggningssystemet är viktiga för att kunna spara undan flera olika listor det 
+vill säga mer data.  
+
+ 
+
+Det vi skulle kunna utveckla är samspelet använda oss av Git, samt någon version av LiveShare. 
+
+Vi skulle även kunna utveckla inloggningssystemet med möjligheten att kunna spara datum eller andra 
+viktiga aspekter samt fungera mellan sidorna för att kunna se systemet fungera i sin helhet.  
+
+Vi skulle även kunna Skapa en hemsida med fler produkter och funktioner för att göra användaren mer
+ aktiv på sidan. Genom att binda kundens intresse till sidan blir kunden mer benägen att spendera pengar
+ på produkterna bra exempel på detta är Apples Hemsida samt eller Harrypotter London toure de bygger upp
+ en sida som är en representation av deras produkter och företag de berättar en historia som fångar användaren.
+ Detta är viktigt för att skapa en bra upplevelse för användaren detta leder till en nöjd kund.  
+
+ 
+
+ 
+
+Av Jesper & Ali  
+

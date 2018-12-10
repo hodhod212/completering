@@ -1,0 +1,60 @@
+[
+    {
+        "title": "iPhone X",
+        "description": "Last years phone from Apple with a beautiful all display front.",
+        "image": "iPhoneX.png",
+        "price": 11495
+    },{
+        "title": "One Plus 5",
+        "description": "Sleek and powerful smartphone from One Plus.",
+        "image": "OnePlus5.png",
+        "price": 4995
+    },{
+        "title": "Galaxy S8",
+        "description": "Really cool edge to edge smartphone from Samsung.",
+        "image": "SamsungS8.png",
+        "price": 7990
+    },{
+        "title": "LG V30",
+        "description": "Super nice and beautiful smartphone from LG.",
+        "image": "LGV30.png",
+        "price": 7495
+    },
+    {
+        "title": "iPhone_XS",
+        "description": "Super nice and beautiful smartphone from LG.",
+        "image": "iPhone_XS.png",
+        "price": 11000
+    },
+    {
+        "title": "iphone7-guld",
+        "description": "Super nice and beautiful smartphone from LG.",
+        "image": "iphone7-guld.png",
+        "price": 5000
+    },
+    {
+        "title": "samsung_Crown",
+        "description": "Super nice and beautiful smartphone from LG.",
+        "image": "samsung_Crown.png",
+        "price": 10000
+    },
+    
+    {
+        "title": "razerphone2",
+        "description": "Super nice and beautiful smartphone from LG.",
+        "image": "razerphone2.png",
+        "price": 4000
+    },
+    {
+        "title": "Xperia_XZ3",
+        "description": "Super nice and beautiful smartphone from LG.",
+        "image": "Xperia_XZ3.png",
+        "price": 7500
+    },
+    {
+        "title": "Samsung_Xcover",
+        "description": "Super nice and beautiful smartphone from LG.",
+        "image": "Samsung_Xcover.png",
+        "price": 10500
+    }
+]

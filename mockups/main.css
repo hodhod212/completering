@@ -1,0 +1,47 @@
+img{
+    display: block; margin-left: auto; margin-right: auto;width: 190px;
+    }
+.topnav {
+    overflow: hidden;
+    background-color: #212121;
+    }
+
+    .test {
+        color: red;
+    }
+.topnav a {
+    float: left;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    background-color: #212121;
+    }
+.topnav a:hover {
+    background-color: #4CAF50;
+    color:  #212121;
+    }
+.topnav a.active {
+    background-color: #5596F5;
+    color: #FFFFFF;
+    }
+.topnav div{
+    height:40px;background-color: #212121;width:100%; position:fixed;
+
+    }
+.active a {
+    height:40px;margin-left:15px;color:white;background-color: #212121;
+    }
+   fa fa-shopping-cart i{
+    font-size:24px;color:white;background-color: #212121;margin:0 10px 0 10px;
+    }
+.rensa a{
+    float:right;background-color: #212121;
+    }
+.rensa button{
+    background-color: #212121;color:white;border:0;
+    }
+.count a{
+    float:right !important;background-color: #212121;color:white
+    }

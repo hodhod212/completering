@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>TechStore</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="mockups/main2.css" />
+</head>
+<body   id="navStyle">
+    <div class="topnav" style="height:40px;background-color:#212121; position:fixed;width: 100%;">
+        <a class="active" href="index.html"  style="height:45px;background-color:#212121;"><b>TechStore</b></a>
+        <a href="kundvagn.html" style="float:right;"><i class="fa fa-shopping-cart" style="font-size:24px;color:#FFFFFF;"></i></a>
+        <a href="#" id="count-cart" class="test" style="float:right;"></a>
+    </div > 
+    <h3 style="color:#212121;padding-top:35px;"> <i class="fa fa-shopping-cart" style="margin-right:5px;font-size:24px;color:#212121;"></i>Kundvagn</h3>
+    <div class="mobile">
+        <ul id="show-cart" class="show-cart" style="display:block;">
+        </ul>
+        <div style="text-align:center;color:#212121;">Total pris: &nbsp;<span id="total-cart" class="test"></span>&nbsp;kr</div>
+        <div style="text-align:center;" > <button onclick="klar()" id="clear-cart" class="mobile" style="border:1px ;color:#FFFFFF;background-color:#5596F5;  border-radius:5px;display:center;">
+            <i class="fa fa-check" style="font-size:24px;color:#FFFFFF"></i> Slutför ditt köp</button>
+        </div>
+    </div>
+</body>
+    <script src="mockups/shoppingCart.js"></script>
+    <script src="mockups/main2.js"></script>
+</html>
