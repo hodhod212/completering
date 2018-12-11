@@ -17,29 +17,23 @@ function addProductsToWebpage() {
     for ( i in listOfProducts) {
         var li = document.createElement('li');
         li.setAttribute('class','styles');
-        li.setAttribute('style','list-style-type:none;padding-top:37px;');
         var h3 = document.createElement('h3');
         h3.innerText = listOfProducts[i].title;
-        h3.setAttribute('style','text-align: center;')
         var p = document.createElement('p');
         p.innerText = listOfProducts[i].description;
-        p.setAttribute('style','text-align: center;font-size:small;')
         var myImage = document.createElement('img');
         myImage.setAttribute('src','assets/'+listOfProducts[i].image);
-        myImage.setAttribute('style','display: block; margin-left: auto; margin-right: auto;width: 170px;');
-        var h4 = document.createElement('h4');
-        h4.innerText = listOfProducts[i].price+' kr';
-        h4.setAttribute('style', 'margin-left:auto%;margin-right:auto%;center;display:block;')
+        var h6 = document.createElement('h6');
+        h6.innerText = listOfProducts[i].price+' kr';
         var Button = document.createElement('button');
         Button.setAttribute('data-name', listOfProducts[i].title);
         Button.setAttribute('data-price', listOfProducts[i].price);
         Button.setAttribute('src','assets/'+listOfProducts[i].image);
         Button.setAttribute('class', 'add-to-cart');
-        Button.innerHTML = '<i class="fa fa-cart-arrow-down" style="font-size:22px;color:white;margin-right:4px;border-radius:5px;"></i>lägg till kundvägnen';
-        Button.setAttribute('style','border-radius:5px;color:white;center;font-size:small;background-color: #5596F5;width:159px;display:block; margin-left: auto; margin-right: auto;')
-        h4.appendChild(Button);
+        Button.innerHTML = '<i class="fa fa-cart-arrow-down" ></i>lägg till kundvägnen';
+        h6.appendChild(Button);
         p.appendChild(myImage);
-        p.appendChild(h4)
+        p.appendChild(h6)
         li.appendChild(h3);
         li.appendChild(p);
         document.body.appendChild(li); }      
