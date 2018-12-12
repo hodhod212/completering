@@ -1,51 +1,77 @@
-h3 {
+.topnavindex {
+    overflow: hidden;
+    background-color: #212121;
+    }
+      
+.topnavindex a {
+    float: left;
+    color: #f2f2f2;
     text-align: center;
-}
+     padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    }
+      
+.topnavindex a:hover {
+    background-color: #212121;
+    color: white;
+    }
+      
+.topnavindex a.active {
+    background-color: #212121;
+    color: white;
+    }
+#count-cart {
+    float:right;background-color: #212121;color:white;
+    }
+.vagn {
+    float:right !important;background-color: #212121 !important;color:white !important;
+    }
+        
+.count a{
+    float:right !important;background-color: #212121 !important;color:white !important;
+    }
+
+h3 {
+    text-align: center; color:#212121;padding-top:35px;
+   
+    }
+#check {
+    font-size:24px;color:#FFFFFF
+    }
+#clear-cart {
+    border:1px ;color:#FFFFFF;background-color:#5596F5;  border-radius:5px;display:center;
+    }
+#total-pris {
+    text-align:center;color:#212121;
+    }
                               
-a {
-    color:#212121; text-align: center; display: inline; 
-}
 ul {
     list-style-type: none; text-align: center; 
-}      
-.topnav {
-    overflow: hidden; background-color: #212121;  
-}           
-.topnav a {
-    float:left; color: #FFFFFF;text-align:center;padding:14px 16px;text-decoration:none;font-size:17px;
-}           
-.topnav a:hover {
-    background-color: #4CAF50;color: #212121;    
-}           
-.topnav a.active {
-    background-color: #4CAF50; color: #FFFFFF; 
-}
-.topnav div{
-    height:40px;background-color:#212121; position:fixed;width: 100%;
-}
+    }
 /* kundvagn.js */
 li {
     font-size:smaller;border-radius:5px; border:1px solid  #5596F5;display:inline-block;background-color:#F5F5F5;color:black;margin:4px;width:200px;
-}
+    }
 img{
     height: 140px; 
     display: block; margin-left: auto; margin-right: auto;
 }
 input {
     width:33px;height:19px;border-radius:3px;display:inline;
-}
+    }
 p {
     display:inline; 
-}
+    }
 .plus-item  {
     background-color: #E64E4E;color:white;border-radius:5px 0 0 5px;
-}
+    }
 .subtract-item {
     background-color: #E64E4E;color:white;
-}
+    }
 .delete-item {
     background-color:#E64E4E;color:white;border-radius:0 5px 5px 0;
-}
+    }
 i {
     font-size:16px !important;color:white !important;
-}
+    }

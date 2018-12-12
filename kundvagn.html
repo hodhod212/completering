@@ -12,21 +12,23 @@
     <link rel="stylesheet" type="text/css" media="screen" href="mockups/kundvagn.css" />
 </head>
 <body   id="navStyle">
-    <div class="topnav" style="height:40px;background-color:#212121; position:fixed;width: 100%;">
-        <a class="active" href="index.html"  style="height:45px;background-color:#212121;"><b>TechStore</b></a>
-        <a href="kundvagn.html" style="float:right;"><i class="fa fa-shopping-cart" style="font-size:24px;color:#FFFFFF;"></i></a>
-        <a href="#" id="count-cart" class="test" style="float:right;"></a>
-    </div > 
-    <h3 style="color:#212121;padding-top:35px;"> <i class="fa fa-shopping-cart" style="margin-right:5px;font-size:24px;color:#212121;"></i>Kundvagn</h3>
+        <div class="topnavindex">
+                <a class="activeindex" href="index.html"><b>TechStore</b></a>
+                <a href="kundvagn.html" class="vagn" >
+                    <i class="fa fa-shopping-cart"  ></i></a>
+                <a href="#" id="count-cart"  ></a>
+              </div> 
+    
+    <h3 > <i class="fa fa-shopping-cart" style="font-size:22px !important;color:#212121 !important;margin-right:4px !important;" ></i>Kundvagn</h3>
     <div class="mobile">
         <ul id="show-cart" class="show-cart" style="display:block;">
         </ul>
-        <div style="text-align:center;color:#212121;">Total pris: &nbsp;<span id="total-cart" class="test"></span>&nbsp;kr</div>
-        <div style="text-align:center;" > <button onclick="klar()" id="clear-cart" class="mobile" style="border:1px ;color:#FFFFFF;background-color:#5596F5;  border-radius:5px;display:center;">
-            <i class="fa fa-check" style="font-size:24px;color:#FFFFFF"></i> Slutför ditt köp</button>
+        <div id="total-pris" >Total pris: &nbsp;<span id="total-cart" class="test"></span>&nbsp;kr</div>
+        <div style="text-align:center;" > <button onclick="klar()" id="clear-cart" class="mobile" >
+            <i class="fa fa-check" id="check" ></i> Slutför ditt köp</button>
         </div>
     </div>
-</body>
     <script src="mockups/shoppingCart.js"></script>
     <script src="mockups/kundvagn.js"></script>
+</body>
 </html>
