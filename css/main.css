@@ -1,0 +1,121 @@
+
+.topnavindex {
+    overflow: hidden;
+    background-color: #212121;
+    position: fixed;width: 100%;height: 33px;;
+    }
+      
+.topnavindex a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+     padding: 0px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    margin-bottom:8px;
+    }
+      
+.topnavindex a:hover {
+    background-color: #212121;
+    color: white;
+    }
+      
+.topnavindex a.active {
+    background-color: #212121;
+    color: white;
+    }
+
+.rensa {
+    float:right !important;background-color: #212121 !important;
+    }
+.rensa button{
+    background-color: #212121;color:white;border:0;
+    }
+#count-cart {
+    float:right;background-color: #212121;color:white;
+    }
+.vagn {
+float:right !important;background-color: #212121 !important;color:white !important;
+    }
+    
+.count a{
+    float:right !important;background-color: #212121 !important;color:white !important;
+    }
+.buttontext {
+    display: inline !important;
+}
+button {
+    border: 0; border-radius:5px;color:white;font-size:small;background-color: #5596F5;
+    width:159px;display:block; margin-left: auto; margin-right: auto;height: 25px;margin-top: 5px;
+    }
+i {
+    font-size:15px !important;color:white !important;margin-right:4px !important;
+    border-radius:5px !important;display: inline !important;
+
+    }
+img{
+    display: block; margin-left: auto; margin-right: auto;width: 171px;margin-top: 6px;
+}
+h6 {
+    margin-left:auto;margin-right:auto;display:block; 
+    }
+h3 {
+    text-align: center;
+    }
+p {
+    text-align: center;
+    }
+
+    /* Style för shopingindex.js*/
+    @media only screen
+    and (min-width : 1024px) 
+    and (max-width : 1366px) {
+        body {
+            font-size: 100%;
+            }
+        li {
+            list-style-type:none;padding-top:4%;
+        }
+  
+    }
+    
+    @media screen and (max-width: 1024px)
+    and (min-width: 800px)
+    {
+        body {
+        font-size: 95%;
+        }
+        li {
+            list-style-type:none;padding-top:5%;
+        }
+    }
+        @media screen and (max-width: 799px)
+    and (min-width: 600px)
+    {
+        body {
+        font-size: 80%;
+        }
+        li {
+            list-style-type:none;padding-top:6%;
+        }
+    }
+    @media screen and (max-width: 599px)
+    and (min-width: 400px)
+    {
+        body {
+        font-size: 70%;
+        }
+        li {
+            list-style-type:none;padding-top:8%;
+        }
+    }
+    @media screen and (max-width: 399px)
+    {
+        body {
+        font-size: 60%;
+        }
+        li {
+            list-style-type:none;padding-top:10%;
+        } 
+    }
+      

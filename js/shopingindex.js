@@ -1,4 +1,4 @@
-var listOfProducts;
+
 function loadProducts() {
     fetch("products.json")
     .then(function(response) {
@@ -7,8 +7,11 @@ function loadProducts() {
     .then(function(products) {
     listOfProducts = products;
     addProductsToWebpage();
+   
 });
 };
+
+//
 function initSite() {
     $("#count-cart").html(shoppingCart.countCart());
 loadProducts();}
@@ -22,7 +25,7 @@ function addProductsToWebpage() {
         var p = document.createElement('p');
         p.innerText = listOfProducts[i].description;
         var myImage = document.createElement('img');
-        myImage.setAttribute('src','assets/'+listOfProducts[i].image);
+        myImage.setAttribute('src','Images/'+listOfProducts[i].image);
         var h6 = document.createElement('h6');
         h6.innerText = listOfProducts[i].price+' kr';
         var Button = document.createElement('button');
@@ -30,7 +33,7 @@ function addProductsToWebpage() {
         Button.setAttribute('data-price', listOfProducts[i].price);
         Button.setAttribute('src','assets/'+listOfProducts[i].image);
         Button.setAttribute('class', 'add-to-cart');
-        Button.innerHTML = '<i class="fa fa-cart-arrow-down" ></i>lägg till kundvägnen';
+        Button.innerHTML = '<i class="fa fa-cart-arrow-down" ></i><p class ="buttontext">lägg till kundvägnen</p>';
         h6.appendChild(Button);
         p.appendChild(myImage);
         p.appendChild(h6)
@@ -77,6 +80,7 @@ function addProductsToWebpage() {
         displayCart();
     })   
 } 
+
   
    
 

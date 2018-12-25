@@ -1,14 +1,14 @@
 .topnavindex {
     overflow: hidden;
     background-color: #212121;
-    position: fixed;width: 100%;height: 40px;;
+    position: fixed;width: 100%;height: 33px;;
     }
       
 .topnavindex a {
     float: left;
     color: #f2f2f2;
     text-align: center;
-     padding: 14px 16px;
+     padding: 0px 16px;
     text-decoration: none;
     font-size: 17px;
     }
@@ -22,6 +22,9 @@
     background-color: #212121;
     color: white;
     }
+.mobile {
+    margin-bottom: 6px;
+}
 #count-cart {
     float:right;background-color: #212121;color:white;
     }
@@ -50,13 +53,14 @@ h3 {
 ul {
     list-style-type: none; text-align: center; 
     }
-/* kundvagn.js */
+
 li {
-    font-size:smaller;border-radius:5px; border:1px solid  #5596F5;display:inline-block;background-color:#F5F5F5;color:black;margin:4px;width:200px;
+    font-size:smaller;border-radius:5px; border:1px solid  #5596F5;
+    display:inline-block;background-color:#F5F5F5;color:black;margin:4px;width:200px;
     }
 img{
-    height: 140px; 
-    display: block; margin-left: auto; margin-right: auto;
+    height: 145px; 
+    display: block; margin-left: auto; margin-right: auto;margin-top: 3px;
 }
 input {
     width:33px;height:19px;border-radius:3px;display:inline;
@@ -65,13 +69,13 @@ p {
     display:inline; 
     }
 .plus-item  {
-    background-color: #E64E4E;color:white;border-radius:5px 0 0 5px;
+    background-color: #E64E4E;color:white;border-radius:5px 0 0 5px;margin-bottom: 2px;
     }
 .subtract-item {
-    background-color: #E64E4E;color:white;
+    background-color: #E64E4E;color:white;margin-bottom: 2px;
     }
 .delete-item {
-    background-color:#E64E4E;color:white;border-radius:0 5px 5px 0;
+    background-color:#E64E4E;color:white;border-radius:0 5px 5px 0;margin-bottom: 2px;
     }
 i {
     font-size:16px !important;color:white !important;

@@ -1,9 +1,14 @@
 
-
+// kundvagn
 function klar() {
     alert("Du har slutfört ditt köp.");
-    $(".show-cart li").remove();
+    //$(".show-cart li").remove();
 }
+fetch("products.json")
+.then(function(response) {
+return response.json();
+})
+.then(function(products) {
 $(".add-to-cart").click(function(event) {
     event.preventDefault();
     var name = $(this).attr("data-name");
@@ -15,16 +20,17 @@ $("#clear-cart").click(function(event){
     shoppingCart.ClearCart();
     displayCart();
 });
+
 function  displayCart() {
     var cartArray = shoppingCart.listCart();
-    var output = "";
+    //var output = "";
     document.getElementById("show-cart").innerHTML = "";
     for (var i in cartArray) {
         var product = document.createElement("li")
         product.setAttribute('class','test');
         var myImage = document.createElement('img');
-        myImage.setAttribute('src','assets/'+cartArray[i].price+'.png');
-        product.appendChild(myImage);
+        myImage.setAttribute('src','Images/'+ products[i].image);
+        product.appendChild(myImage);     
         var h4 = document.createElement('h4');
         h4.innerText = cartArray[i].name ;
         product.appendChild(h4);
@@ -55,7 +61,10 @@ function  displayCart() {
         Button3.setAttribute('data-name',cartArray[i].name);
         Button3.innerHTML ="<i class='fa fa-trash-o'> Ta bort</i>";
         product.appendChild(Button3);
-        document.getElementById("show-cart").appendChild(product); }
+        document.getElementById("show-cart").appendChild(product);
+    };
+    
+    
 $("#show-cart").on("click", ".delete-item", function(event){ 
 var name = $(this).attr("data-name");
 shoppingCart.removeItemFromCartAll(name);
@@ -91,3 +100,4 @@ $("#show-cart").on("change", ".item-count", function(event) {
     displayCart();
 })
 displayCart();
+});

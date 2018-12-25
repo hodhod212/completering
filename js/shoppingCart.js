@@ -88,5 +88,6 @@ shoppingCart.saveCart = function () {
 };
 shoppingCart.loadCart = function () {
      this.cart = JSON.parse(localStorage.getItem("shoppingCart"));
+     if(!(this.cart)) this.cart = [];
 };
 shoppingCart.loadCart();
