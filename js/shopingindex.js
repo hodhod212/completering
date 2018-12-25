@@ -6,12 +6,9 @@ function loadProducts() {
     })
     .then(function(products) {
     listOfProducts = products;
-    addProductsToWebpage();
-   
-});
+    addProductsToWebpage(); 
+    });
 };
-
-//
 function initSite() {
     $("#count-cart").html(shoppingCart.countCart());
 loadProducts();}

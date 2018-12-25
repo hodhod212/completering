@@ -2,7 +2,6 @@
 // kundvagn
 function klar() {
     alert("Du har slutfört ditt köp.");
-    //$(".show-cart li").remove();
 }
 fetch("products.json")
 .then(function(response) {
@@ -23,7 +22,6 @@ $("#clear-cart").click(function(event){
 
 function  displayCart() {
     var cartArray = shoppingCart.listCart();
-    //var output = "";
     document.getElementById("show-cart").innerHTML = "";
     for (var i in cartArray) {
         var product = document.createElement("li")
@@ -74,7 +72,6 @@ $("#clear-cart").click(function(event){
 shoppingCart.ClearCart();
 displayCart();
 });
-// $("#show-cart").html(output);
 $("#count-cart").html(shoppingCart.countCart());
 $("#total-cart").html(shoppingCart.totalCart());
 }  
