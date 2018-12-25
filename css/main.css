@@ -66,56 +66,56 @@ p {
     text-align: center;
     }
 
-    /* Style för shopingindex.js*/
-    @media only screen
-    and (min-width : 1024px) 
-    and (max-width : 1366px) {
-        body {
-            font-size: 100%;
-            }
-        li {
-            list-style-type:none;padding-top:4%;
-        }
-  
+/* Style för shopingindex.js*/
+@media only screen
+and (min-width : 1024px) 
+and (max-width : 1366px) {
+    body {
+        font-size: 100%;
     }
-    
-    @media screen and (max-width: 1024px)
-    and (min-width: 800px)
-    {
-        body {
+    li {
+        list-style-type:none;padding-top:4%;
+    }
+}
+
+@media screen and (max-width: 1024px)
+and (min-width: 800px)
+{
+    body {
         font-size: 95%;
-        }
-        li {
-            list-style-type:none;padding-top:5%;
-        }
     }
-        @media screen and (max-width: 799px)
-    and (min-width: 600px)
-    {
-        body {
+    li {
+        list-style-type:none;padding-top:5%;
+    }
+}
+
+@media screen and (max-width: 799px)
+and (min-width: 600px)
+{
+    body {
         font-size: 80%;
-        }
-        li {
-            list-style-type:none;padding-top:6%;
-        }
     }
-    @media screen and (max-width: 599px)
-    and (min-width: 400px)
-    {
-        body {
+    li {
+        list-style-type:none;padding-top:6%;
+    }
+}
+@media screen and (max-width: 599px)
+and (min-width: 400px)
+{
+    body {
         font-size: 70%;
-        }
-        li {
-            list-style-type:none;padding-top:8%;
-        }
     }
-    @media screen and (max-width: 399px)
-    {
-        body {
+    li {
+        list-style-type:none;padding-top:8%;
+    }
+}
+@media screen and (max-width: 399px)
+{
+    body {
         font-size: 60%;
-        }
-        li {
-            list-style-type:none;padding-top:10%;
-        } 
     }
+    li {
+        list-style-type:none;padding-top:10%;
+    } 
+}
       
