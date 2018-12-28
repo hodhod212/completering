@@ -2,24 +2,13 @@
 // kundvagn
 function klar() {
     alert("Du har slutfört ditt köp.");
+    $(".show-cart li").remove();
 }
 fetch("products.json")
 .then(function(response) {
 return response.json();
 })
 .then(function(products) {
-$(".add-to-cart").click(function(event) {
-    event.preventDefault();
-    var name = $(this).attr("data-name");
-    var price = Number($(this).attr("data-price"));
-    shoppingCart.addItemToCart(name,price,1);
-    displayCart();
-});       
-$("#clear-cart").click(function(event){
-    shoppingCart.ClearCart();
-    displayCart();
-});
-
 function  displayCart() {
     var cartArray = shoppingCart.listCart();
     document.getElementById("show-cart").innerHTML = "";
@@ -27,7 +16,8 @@ function  displayCart() {
         var product = document.createElement("li")
         product.setAttribute('class','test');
         var myImage = document.createElement('img');
-        myImage.setAttribute('src','Images/'+ products[i].image);
+        myImage.setAttribute('class','delete-image')  
+        myImage.setAttribute('src','Images/'+cartArray[i].name+'.png');
         product.appendChild(myImage);     
         var h4 = document.createElement('h4');
         h4.innerText = cartArray[i].name ;
@@ -62,19 +52,18 @@ function  displayCart() {
         document.getElementById("show-cart").appendChild(product);
     };
     
-    
-$("#show-cart").on("click", ".delete-item", function(event){ 
-var name = $(this).attr("data-name");
-shoppingCart.removeItemFromCartAll(name);
-displayCart();
-});
 $("#clear-cart").click(function(event){
 shoppingCart.ClearCart();
 displayCart();
 });
 $("#count-cart").html(shoppingCart.countCart());
 $("#total-cart").html(shoppingCart.totalCart());
-}  
+$("#show-cart").on("click", ".delete-item", function(event){ 
+    var name = $(this).attr("data-name");
+    shoppingCart.removeItemFromCartAll(name);
+    displayCart();
+    });
+}
 $("#show-cart").on("click", ".delete-item", function(event){
 var name = $(this).attr("data-name");
 shoppingCart.removeItemFromCart(name);
@@ -96,5 +85,16 @@ $("#show-cart").on("change", ".item-count", function(event) {
     shoppingCart.setCountForItem(name,count);
     displayCart();
 })
+$(".add-to-cart").click(function(event) {
+    event.preventDefault();
+    var name = $(this).attr("data-name");
+    var price = Number($(this).attr("data-price"));
+    shoppingCart.addItemToCart(name,price,1);
+    displayCart();
+});       
+$("#clear-cart").click(function(event){
+    shoppingCart.ClearCart();
+    displayCart();
+}); 
 displayCart();
 });
